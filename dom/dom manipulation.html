@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .domclass{
+        background-color: blue;
+    }
+</style>
+<body>
+
+    <div>
+        <div class="domclass" id="domdiv">
+            <h1 id="newdom">hello world</h1>
+        </div>
+        <button onmouseleave="clickme()">
+            Click me
+        </button>
+    </div>
+    <script>
+        function clickme(){
+            document.getElementById("newdom").innerHTML="hello new"
+        }
+    </script>
+</body>
+</html>
